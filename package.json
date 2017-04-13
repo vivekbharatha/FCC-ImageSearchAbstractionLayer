@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/vivekbharatha/FCC-ImageSearchAbstractionLayer#readme",
   "dependencies": {
-    "express": "4.15.2"
+    "express": "4.15.2",
+    "lowdb": "0.16.2",
+    "request": "2.81.0"
   }
 }
