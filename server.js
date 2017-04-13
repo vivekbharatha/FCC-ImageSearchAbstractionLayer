@@ -56,7 +56,11 @@ app.get('/api/imagesearch/:q/:offset?', function (req, res, next) {
 app.get('/api/latest/imagesearch', function (req, res, next) {
 	var response = [];
 
-	
+	response = db.get('latest')
+	.chain()
+  		.sortBy('when').reverse()
+  		.take(10)
+  		.value();
 	return res.json(response);
 });
 
